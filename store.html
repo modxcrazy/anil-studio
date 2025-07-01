@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileStore - Shop Smartphones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-mobile-alt"></i>
+            <span>MobileStore</span>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Latest Smartphones</h1>
+        <p>Get the best deals on flagship phones</p>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <div class="product" data-id="1">
+            <img src="https://via.placeholder.com/150" alt="iPhone 14">
+            <h3>iPhone 14 Pro</h3>
+            <p>$999</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="2">
+            <img src="https://via.placeholder.com/150" alt="Samsung S23">
+            <h3>Samsung Galaxy S23</h3>
+            <p>$799</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="3">
+            <img src="https://via.placeholder.com/150" alt="Google Pixel 7">
+            <h3>Google Pixel 7</h3>
+            <p>$599</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product" data-id="4">
+            <img src="https://via.placeholder.com/150" alt="OnePlus 11">
+            <h3>OnePlus 11</h3>
+            <p>$699</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added here via JS -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: $<span class="total-price">0</span></h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
